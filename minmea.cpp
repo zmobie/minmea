@@ -612,6 +612,7 @@ bool minmea_parse_zda(struct minmea_sentence_zda *frame, const char *sentence)
   return true;
 }
 
+#ifdef false
 int minmea_gettime(struct timespec *ts, const struct minmea_date *date, const struct minmea_time *time_)
 {
     if (date->year == -1 || time_->hours == -1)
@@ -641,5 +642,5 @@ int minmea_gettime(struct timespec *ts, const struct minmea_date *date, const st
         return -1;
     }
 }
-
+#endif
 /* vim: set ts=4 sw=4 et: */
