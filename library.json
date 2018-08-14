@@ -13,6 +13,9 @@
           "+<minmea.cpp>",
           "-<example.c>",
           "-<tests.c>"
+      ],
+      "flags": [
+        "-Dtimegm=mktime"
       ]
   },
   "frameworks": "*"
