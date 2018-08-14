@@ -1,0 +1,19 @@
+{
+  "name": "minmea",
+  "keywords": "nmea",
+  "description": "a lightweight GPS NMEA 0183 parser library in pure C ",
+  "version": "0.3.0",
+  "repository":
+  {
+      "type": "git",
+      "url": "https://github.com/zmobie/minmea"
+  },
+  "build": {
+      "srcFilter": [
+          "+<minmea.cpp>",
+          "-<example.c>",
+          "-<tests.c>"
+      ]
+  },
+  "frameworks": "*"
+}
